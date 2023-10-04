@@ -66,7 +66,7 @@ nav img {
 
 nav a {
     font-size: 1em;
-    width: 40%;
+    width: 35%;
     text-decoration: none;
     color: #fff;
     border-bottom: 3px solid #44FFA1;
@@ -75,6 +75,8 @@ nav a {
 
 /********************* HERO **********************/
 .hero {
+    position: relative;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,17 +105,25 @@ nav a {
     border: 1px solid #44FFA1;
     background: #44FFA1;
     padding: 12px 24px;
-    margin-bottom: 64px;
+    margin-bottom: 156px;
 }
+
+.hero img {
+    position: absolute;
+    bottom: -94.4px;
+    width: 79%;
+}
+
 
 /********************* SERVICES **********************/
 
 .services {
-    margin-top: 155px;
+    padding-top: 155px;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    background: #FCF8FF;
 }
 
 .service {
@@ -131,6 +141,14 @@ nav a {
     padding: 5px 15px;
     border-radius: 50%;
     margin-bottom: 24px;
+}
+
+.service .service-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
 }
 
 .service h2 {
@@ -154,6 +172,7 @@ nav a {
     justify-content: center;
     align-content: center;
     flex-flow: row wrap;
+
 }
 
 .cta img {
@@ -186,6 +205,7 @@ nav a {
     text-align: center;
     font-size: 1em;
     margin-bottom: 24px;
+    line-height: 28px;
 }
 
 .cta-content a {
@@ -231,4 +251,118 @@ footer .social {
 
 .social img {
     width: 17%;
+}
+
+/******************* TABLET STYLES ********************/
+
+@media (min-width: 768px) {
+
+    /****************** GENERAL STYLES *******************/
+    .container {
+        width: 89.7%;
+    }
+
+    /****************** HEADER *******************/
+
+    nav {
+        margin: 32px 0 56px 0;
+    }
+
+    nav img {
+        width: 13.9%;
+    }
+
+    nav a {
+        width: 18%;
+    }
+
+    /****************** HERO *******************/
+
+    .hero {
+        width: 75%;
+    }
+
+    .hero h1 {
+        font-family: 'Fraunces', serif;
+        font-size: 3.75em;
+        line-height: 60px;
+        font-weight: 600;
+        margin-bottom: 39px;
+    }
+
+    .hero img {
+        position: absolute;
+        bottom: -147px;
+        width: 67%;
+    }
+
+    /********************* SERVICES **********************/
+
+    .services {
+        padding-top: 204px;
+        padding-bottom: 55px;
+    }
+
+    .service {
+        margin-bottom: 48px;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .service .number {
+        margin-right: 32px;
+        margin-top: 45px;
+    }
+
+    .service h2,
+    .service p {
+        text-align: left;
+    }
+
+    .service .service-content {
+        width: 65%;
+        justify-content: flex-start;
+    }
+
+    /********************* CTA **********************/
+
+    .cta .container {
+        width: 87.7%;
+        justify-content: flex-start;
+    }
+
+    .cta img {
+        width: 38.7%;
+    }
+
+    .cta-content {
+        top: 150px;
+        right: 40px;
+        /*228px*/
+        width: 63.51%;
+        padding: 48px 0 56px 0;
+    }
+
+    .cta-content .container {
+        width: 78.3%;
+    }
+
+    .cta-content h2 {
+        font-size: 3em;
+        margin-bottom: 24px;
+        line-height: 56px;
+    }
+
+    .cta-content p {
+        margin-bottom: 24px;
+        line-height: 28px;
+        text-align: left;
+    }
+
+    /**************** FOOTER *****************/
+
+    .social .container {
+        width: 15.1%;
+        margin-bottom: 121.78px;
+    }
 }
