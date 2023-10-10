@@ -114,6 +114,10 @@ nav a {
     width: 79%;
 }
 
+.hide {
+    display: none;
+}
+
 
 /********************* SERVICES **********************/
 
@@ -296,6 +300,28 @@ footer .social {
         width: 67%;
     }
 
+    .hero .spiral-one {
+        width: 44.58%;
+        position: absolute;
+        z-index: 1;
+        top: -41px;
+        left: -278px;
+    }
+
+    .hero .spiral-two {
+        width: 22.4%;
+        position: absolute;
+        z-index: 1;
+        top: 150px;
+        right: -160px;
+    }
+
+    .hide {
+        display: block;
+    }
+
+
+
     /********************* SERVICES **********************/
 
     .services {
@@ -357,6 +383,14 @@ footer .social {
         margin-bottom: 24px;
         line-height: 28px;
         text-align: left;
+    }
+
+    .cta .cta-spiral3 {
+        width: 34%;
+        position: absolute;
+        z-index: 1;
+        bottom: -82px;
+        right: 20px;
     }
 
     /**************** FOOTER *****************/
